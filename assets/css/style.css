@@ -990,6 +990,24 @@ a:hover {
   font-size: 1.2rem;
 }
 
+
+.custom-img {
+  width: 100%; /* Set the width to 100% for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default spacing issues */
+  background-color: #d2f4e3; /* Light green background color */
+}
+
+.custom-img:after {
+  content: '';
+  display: block;
+  padding-top: 100%; /* Set the padding to maintain a 1:1 aspect ratio */
+}
+
+.work-box:hover .custom-img {
+  filter: brightness(90%); /* Adjust brightness on hover if needed */
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
